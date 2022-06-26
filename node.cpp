@@ -15,6 +15,8 @@ int Node::addDependence(Node dp)
 	Node::dependence.push_back(dp);
 	return 0;
 }
+
+
 /*
 std::ostream& operator<< (std::ostream& out, const Node& node)
 {
