@@ -1,6 +1,11 @@
 #include "node.h"
 #include <iostream>
 
+Node::Node()
+{
+	Node(-1, 0, 0);
+
+}
 Node::Node(int id, int in_a, int out_a)
 {
 	Node::id = id;
@@ -15,7 +20,10 @@ int Node::addDependence(Node dp)
 	Node::dependence.push_back(dp);
 	return 0;
 }
-
+bool operator==(const Node& lhs, const Node& rhs)
+{ 
+	return lhs.id==rhs.id;
+}
 
 /*
 std::ostream& operator<< (std::ostream& out, const Node& node)

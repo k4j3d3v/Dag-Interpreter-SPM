@@ -13,10 +13,8 @@ class Node{
 		//int addDependant(Node);
 		int addDependence(Node);
 		friend std::ostream& operator<< (std::ostream& out, const Node& node);
-		friend bool operator==(const Node& lhs, const Node& rhs)
-		{ 
-			return lhs.id==rhs.id;
-		}
+		friend bool operator==(const Node& lhs, const Node& rhs);
+
 
 };
 #endif //NODE_H_ 
